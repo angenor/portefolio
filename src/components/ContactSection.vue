@@ -82,7 +82,7 @@ const handleSubmit = (e) => {
           </div>
 
           <!-- Social Links -->
-          <div class="flex space-x-4">
+          <div class="flex space-x-4 ">
             <a 
               href="https://linkedin.com/in/angenor-ngouandi-463708186" 
               target="_blank"
@@ -90,13 +90,13 @@ const handleSubmit = (e) => {
             >
               <FontAwesomeIcon icon="fa-brands fa-linkedin" />
             </a>
-            <a 
+            <!-- <a 
               href="https://github.com/angenor99" 
               target="_blank"
               class="w-10 h-10 bg-gray-200 dark:bg-gray-700 rounded-full flex items-center justify-center hover:bg-gray-900 hover:text-white transition-colors"
             >
               <FontAwesomeIcon icon="fa-brands fa-github" />
-            </a>
+            </a> -->
           </div>
         </div>
 

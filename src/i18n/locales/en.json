@@ -70,7 +70,20 @@
       "title": "Biodiversity Framework",
       "description": "Web platform for the global biodiversity framework."
     },
-    "viewProject": "View Project"
+    "uafricas": {
+      "title": "UAfricas Platform",
+      "description": "University platform for United Africa for Sustainable development."
+    },
+    "formationOrange": {
+      "title": "Orange Digital Training",
+      "description": "Professional training program with Orange Group for digital skills development."
+    },
+    "formationRMO": {
+      "title": "RMO Coaching Session",
+      "description": "Performance optimization and competitiveness coaching workshop with RMO."
+    },
+    "viewProject": "View Project",
+    "visitProject": "Visit Project"
   },
   "contact": {
     "title": "Contact Me",

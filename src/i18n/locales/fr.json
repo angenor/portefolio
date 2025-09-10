@@ -70,7 +70,20 @@
       "title": "Cadre Biodiversité",
       "description": "Plateforme web relative au cadre mondial sur la biodiversité."
     },
-    "viewProject": "Voir le projet"
+    "uafricas": {
+      "title": "Plateforme UAfricas",
+      "description": "Plateforme universitaire United Africa for Sustainable development."
+    },
+    "formationOrange": {
+      "title": "Formation Orange Digital",
+      "description": "Programme de formation professionnelle avec le Groupe Orange pour le développement des compétences numériques."
+    },
+    "formationRMO": {
+      "title": "Session Coaching RMO",
+      "description": "Atelier de coaching d'optimisation des performances et de compétitivité avec RMO."
+    },
+    "viewProject": "Voir le projet",
+    "visitProject": "Visiter le projet"
   },
   "contact": {
     "title": "Me Contacter",
