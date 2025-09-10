@@ -22,6 +22,12 @@ const services = [
     title: 'services.training.title',
     description: 'services.training.description',
     color: 'purple'
+  },
+  {
+    icon: 'fa-solid fa-graduation-cap',
+    title: 'services.academicTeaching.title',
+    description: 'services.academicTeaching.description',
+    color: 'orange'
   }
 ]
 </script>
@@ -38,7 +44,7 @@ const services = [
         <div class="w-20 h-1 bg-blue-600 mx-auto mt-4"></div>
       </div>
 
-      <div class="grid md:grid-cols-3 gap-8">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
         <ServiceCard
           v-for="service in services"
           :key="service.title"

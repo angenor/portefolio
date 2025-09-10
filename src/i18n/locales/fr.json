@@ -17,7 +17,7 @@
     "name": "Angenor N'Gouandi",
     "roles": "Et je suis",
     "description": "Expert Informatique à l'Organisation Internationale de la Francophonie, développeur Full Stack passionné avec une expertise en Flutter, Laravel, VueJs et plus. Je crée des solutions innovantes qui font la différence.",
-    "downloadCV": "Télécharger CV"
+    "downloadCV": "Télécharger mon CV"
   },
   "home": {
     "title": "Bienvenue sur mon Portfolio",
@@ -46,8 +46,12 @@
       "description": "Applications mobiles cross-platform avec Flutter et Firebase pour iOS et Android."
     },
     "training": {
-      "title": "Formation",
+      "title": "Formation Professionnelle",
       "description": "Formation professionnelle en développement web, mobile et Python pour entreprises et particuliers."
+    },
+    "academicTeaching": {
+      "title": "Enseignement Académique",
+      "description": "Enseignant à l'ESATIC depuis 2023, je forme les étudiants en Licence 3 en Programmation Web et Multimédia."
     },
     "readMore": "En savoir plus"
   },
