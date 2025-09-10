@@ -15,6 +15,30 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyAjWmehsTq17Adza31k1SvqTQnvLZ0m9TE",
+  authDomain: "angenor.firebaseapp.com",
+  projectId: "angenor",
+  storageBucket: "angenor.firebasestorage.app",
+  messagingSenderId: "408793678615",
+  appId: "1:408793678615:web:3deeca834b199e75792d52",
+  measurementId: "G-HY9FGQGJTG"
+};
+
+// Initialize Firebase
+const appFirebase = initializeApp(firebaseConfig);
+const analytics = getAnalytics(appFirebase);
+
+
 // Add icons to library
 library.add(fas, fab)
 
