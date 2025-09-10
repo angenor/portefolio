@@ -12,11 +12,8 @@ defineProps({
 <template>
   <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group">
     <!-- Image -->
-    <div class="h-48 bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
-      <FontAwesomeIcon 
-        icon="fa-solid fa-code" 
-        class="text-4xl text-white opacity-80 group-hover:scale-110 transition-transform duration-300"
-      />
+    <div class="max-h-48 flex items-center justify-center overflow-hidden">
+      <img class="object-cover" :src="image" alt="">
     </div>
     
     <!-- Content -->
