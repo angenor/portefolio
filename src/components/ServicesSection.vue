@@ -27,8 +27,9 @@ const services = [
 </script>
 
 <template>
-  <section id="services" class="py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-300">
-    <div class="container mx-auto px-4">
+  <section id="services" class="py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-300 relative" style="background-image: url('/images/people-bg/people-bg-2.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
+    <div class="absolute inset-0 dark:bg-gray-800/90 transition-colors duration-300"></div>
+    <div class="container mx-auto px-4 relative z-10">
       <div class="text-center mb-12">
         <h2 class="text-4xl font-bold text-gray-900 dark:text-white mb-2">
           {{ $t('services.title') }}
