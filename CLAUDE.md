@@ -28,6 +28,7 @@ This is a Vue 3 application using the Composition API with the following stack:
 - **Pinia** for state management
 - **Vue-i18n v9** for internationalization (English/French)
 - **Tailwind CSS** with dark mode support
+- **Font Awesome** for icons (solid and brand icons available)
 - **Vitest** for unit testing
 - **Playwright** for end-to-end testing
 
@@ -45,11 +46,13 @@ This is a Vue 3 application using the Composition API with the following stack:
 - `src/components/__tests__/` - Unit tests for components
 
 ### Key Features
-- **Dark Mode**: Implemented via `useSimpleDarkMode` composable with class-based Tailwind dark mode
-- **Theme Persistence**: Dark mode preference saved to localStorage with key `repae-theme-simple`
+- **Dark Mode**: Implemented via `useDarkMode` composable with class-based Tailwind dark mode
+- **Theme Persistence**: Dark mode preference saved to localStorage with key `theme`
 - **System Theme Detection**: Falls back to system preference when no saved preference exists
-- **Route-level Code Splitting**: About page is lazy-loaded
+- **Route-level Code Splitting**: About and Projects pages are lazy-loaded
 - **Internationalization (i18n)**: Vue-i18n v9 with English/French translations, auto-detection of browser language, and localStorage persistence
+- **Reusable Components**: ThemeToggle, LanguageSwitcher, HeaderNav, AppButton, ProjectCard components
+- **Modern UI**: Clean, responsive design with smooth transitions and hover effects
 
 ### Configuration Files
 - `vite.config.js` - Vite configuration with Vue plugin and @ alias for src/
@@ -68,7 +71,9 @@ This is a Vue 3 application using the Composition API with the following stack:
 - Uses ES modules throughout
 - Vite dev server runs on port 5173, preview on 4173
 - Import alias `@` points to `src/` directory
-- Dark mode implementation includes extensive console logging for debugging
+- Clean dark mode implementation without debug logging
+- Responsive design with mobile-first approach
+- All components use proper dark mode classes and transitions
 
 ## Translation Requirements
 
@@ -99,3 +104,58 @@ This is a Vue 3 application using the Composition API with the following stack:
   <input :placeholder="$t('forms.email')" />
 </template>
 ```
+
+## Font Awesome Icons
+
+Font Awesome is fully configured and ready to use throughout the application:
+
+### Available Icon Sets
+- **Solid Icons** (`fas`): Complete set of solid Font Awesome icons
+- **Brand Icons** (`fab`): Social media and brand logos
+
+### Usage
+The `FontAwesomeIcon` component is globally registered and can be used anywhere:
+
+```vue
+<template>
+  <!-- Solid icons -->
+  <FontAwesomeIcon icon="fa-solid fa-user" />
+  <FontAwesomeIcon icon="fa-solid fa-home" />
+  <FontAwesomeIcon icon="fa-solid fa-heart" />
+  
+  <!-- Brand icons -->
+  <FontAwesomeIcon icon="fa-brands fa-github" />
+  <FontAwesomeIcon icon="fa-brands fa-twitter" />
+  <FontAwesomeIcon icon="fa-brands fa-linkedin" />
+  
+  <!-- With additional props -->
+  <FontAwesomeIcon icon="fa-solid fa-star" size="2x" class="text-yellow-500" />
+  <FontAwesomeIcon icon="fa-solid fa-spinner" spin />
+</template>
+```
+
+### Common Props
+- `icon`: The icon name (e.g., `"fa-solid fa-home"` or `["fas", "home"]`)
+- `size`: Icon size (`"xs"`, `"sm"`, `"lg"`, `"2x"`, `"3x"`, etc.)
+- `spin`: Boolean to make the icon spin
+- `pulse`: Boolean to make the icon pulse
+- `flip`: Flip the icon (`"horizontal"`, `"vertical"`, or `"both"`)
+- `rotation`: Rotate the icon (`90`, `180`, `270`)
+
+### Integration with Tailwind CSS
+Font Awesome icons work seamlessly with Tailwind classes for styling:
+
+```vue
+<template>
+  <FontAwesomeIcon 
+    icon="fa-solid fa-heart" 
+    class="text-red-500 hover:text-red-600 transition-colors duration-200" 
+  />
+</template>
+```
+
+### Notes
+- All solid and brand icons are pre-loaded in the library
+- The component is globally available as `FontAwesomeIcon`
+- Use Font Awesome icons liberally throughout the application for consistent iconography
+- Icons are SVG-based and scale perfectly at any size

@@ -1,3 +1,106 @@
 {
-  "welcome": "Bienvenue dans l'application"
+  "welcome": "Bienvenue dans l'application",
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "projects": "Projets"
+  },
+  "theme": {
+    "switchToDark": "Passer en mode sombre",
+    "switchToLight": "Passer en mode clair"
+  },
+  "hero": {
+    "greeting": "Bonjour, c'est moi",
+    "name": "Angenor N'Gouandi",
+    "roles": "Et je suis",
+    "description": "Expert Informatique à l'Organisation Internationale de la Francophonie, développeur Full Stack passionné avec une expertise en Flutter, Laravel, VueJs et plus. Je crée des solutions innovantes qui font la différence.",
+    "downloadCV": "Télécharger CV"
+  },
+  "home": {
+    "title": "Bienvenue sur mon Portfolio",
+    "subtitle": "Développeur Full Stack",
+    "description": "Je crée des applications web modernes avec des technologies de pointe.",
+    "cta": "Voir mes réalisations"
+  },
+  "about": {
+    "title": "À propos de moi",
+    "subtitle": "Développeur Full Stack & Enseignant",
+    "description": "Expert Informatique à l'Organisation Internationale de la Francophonie avec une passion pour le développement web et mobile. J'enseigne également à l'ESATIC où je forme la prochaine génération de développeurs.",
+    "readMore": "En savoir plus",
+    "experience": "Expérience",
+    "education": "Formation",
+    "skills": "Compétences"
+  },
+  "services": {
+    "title": "Mes Services",
+    "subtitle": "Services",
+    "webDev": {
+      "title": "Développement Web",
+      "description": "Création de plateformes web modernes et performantes avec Vue.js, Laravel et autres technologies."
+    },
+    "mobileDev": {
+      "title": "Développement Mobile",
+      "description": "Applications mobiles cross-platform avec Flutter et Firebase pour iOS et Android."
+    },
+    "training": {
+      "title": "Formation",
+      "description": "Formation professionnelle en développement web, mobile et Python pour entreprises et particuliers."
+    },
+    "readMore": "En savoir plus"
+  },
+  "portfolio": {
+    "title": "Derniers Projets",
+    "subtitle": "Portfolio",
+    "epavillon": {
+      "title": "E-Pavillon Francophonie",
+      "description": "Plateforme web pour le pavillon de la Francophonie avec intégration Zoom et YouTube."
+    },
+    "negotiator": {
+      "title": "Guide du Négociateur",
+      "description": "Application mobile du guide du négociateur francophone."
+    },
+    "training": {
+      "title": "Plateforme de Formation",
+      "description": "Plateforme web des formations des négociateurs francophones."
+    },
+    "biodiversity": {
+      "title": "Cadre Biodiversité",
+      "description": "Plateforme web relative au cadre mondial sur la biodiversité."
+    },
+    "viewProject": "Voir le projet"
+  },
+  "contact": {
+    "title": "Me Contacter",
+    "subtitle": "Contact",
+    "form": {
+      "fullName": "Nom complet",
+      "email": "Adresse email",
+      "phone": "Numéro de téléphone",
+      "subject": "Objet",
+      "message": "Votre message",
+      "send": "Envoyer le message"
+    },
+    "info": {
+      "email": "Email",
+      "phone": "Téléphone",
+      "location": "Localisation"
+    }
+  },
+  "footer": {
+    "rights": "Tous droits réservés",
+    "backToTop": "Retour en haut"
+  },
+  "projects": {
+    "title": "Mes Projets",
+    "description": "Voici quelques-uns des projets sur lesquels j'ai travaillé, démontrant mes compétences en développement web moderne.",
+    "cta": {
+      "title": "Intéressé par une collaboration ?",
+      "description": "Je suis toujours ouvert à discuter de nouvelles opportunités et de projets intéressants.",
+      "github": "Voir plus sur GitHub",
+      "contact": "Me Contacter"
+    }
+  }
 }

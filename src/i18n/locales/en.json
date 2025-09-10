@@ -1,3 +1,106 @@
 {
-  "welcome": "Welcome to the application"
+  "welcome": "Welcome to the application",
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "projects": "Projects"
+  },
+  "theme": {
+    "switchToDark": "Switch to dark mode",
+    "switchToLight": "Switch to light mode"
+  },
+  "hero": {
+    "greeting": "Hello, It's Me",
+    "name": "Angenor N'Gouandi",
+    "roles": "And I'm a",
+    "description": "IT Expert at the International Organisation of La Francophonie, passionate Full Stack Developer with expertise in Flutter, Laravel, VueJs and more. I create innovative solutions that make a difference.",
+    "downloadCV": "Download CV"
+  },
+  "home": {
+    "title": "Welcome to My Portfolio",
+    "subtitle": "Full Stack Developer",
+    "description": "I create modern web applications with cutting-edge technologies.",
+    "cta": "View My Work"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Full Stack Developer & Instructor",
+    "description": "IT Expert at the International Organisation of La Francophonie with a passion for web and mobile development. I also teach at ESATIC where I train the next generation of developers.",
+    "readMore": "Read More",
+    "experience": "Experience",
+    "education": "Education",
+    "skills": "Skills"
+  },
+  "services": {
+    "title": "My Services",
+    "subtitle": "Services",
+    "webDev": {
+      "title": "Web Development",
+      "description": "Creating modern and performant web platforms with Vue.js, Laravel and other technologies."
+    },
+    "mobileDev": {
+      "title": "Mobile Development",
+      "description": "Cross-platform mobile applications with Flutter and Firebase for iOS and Android."
+    },
+    "training": {
+      "title": "Training",
+      "description": "Professional training in web, mobile and Python development for companies and individuals."
+    },
+    "readMore": "Read More"
+  },
+  "portfolio": {
+    "title": "Latest Projects",
+    "subtitle": "Portfolio",
+    "epavillon": {
+      "title": "E-Pavillon Francophonie",
+      "description": "Web platform for the Francophonie pavilion with Zoom and YouTube integration."
+    },
+    "negotiator": {
+      "title": "Negotiator's Guide",
+      "description": "Mobile application for the Francophone negotiator's guide."
+    },
+    "training": {
+      "title": "Training Platform",
+      "description": "Web platform for Francophone negotiators training."
+    },
+    "biodiversity": {
+      "title": "Biodiversity Framework",
+      "description": "Web platform for the global biodiversity framework."
+    },
+    "viewProject": "View Project"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "subtitle": "Contact",
+    "form": {
+      "fullName": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "subject": "Subject",
+      "message": "Your Message",
+      "send": "Send Message"
+    },
+    "info": {
+      "email": "Email",
+      "phone": "Phone",
+      "location": "Location"
+    }
+  },
+  "footer": {
+    "rights": "All Rights Reserved",
+    "backToTop": "Back to Top"
+  },
+  "projects": {
+    "title": "My Projects",
+    "description": "Here are some of the projects I've worked on, showcasing my skills in modern web development.",
+    "cta": {
+      "title": "Interested in working together?",
+      "description": "I'm always open to discussing new opportunities and interesting projects.",
+      "github": "View More on GitHub",
+      "contact": "Get In Touch"
+    }
+  }
 }
