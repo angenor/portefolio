@@ -93,13 +93,13 @@ const downloadCV = () => {
             >
               <FontAwesomeIcon icon="fa-brands fa-linkedin" />
             </a>
-            <a 
+            <!-- <a 
               href="https://github.com/angenor99" 
               target="_blank"
               class="text-2xl text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
             >
               <FontAwesomeIcon icon="fa-brands fa-github" />
-            </a>
+            </a> -->
             <a 
               href="mailto:angenor99@gmail.com"
               class="text-2xl text-gray-600 hover:text-red-600 dark:text-gray-400 dark:hover:text-red-400 transition-colors"
