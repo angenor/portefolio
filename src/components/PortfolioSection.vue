@@ -37,22 +37,6 @@ const projects = [
     link: '#',
     tags: ['Laravel', 'Vue.js', 'API']
   },
-  {
-    id: 5,
-    title: 'Fake News Detector',
-    description: 'AI-powered system for detecting fake news with browser extension',
-    image: '/images/port5.jpg',
-    link: '#',
-    tags: ['Python', 'Machine Learning', 'Flask']
-  },
-  {
-    id: 6,
-    title: 'CI/CD Platform',
-    description: 'Continuous integration platform for project management',
-    image: '/images/port6.jpg',
-    link: '#',
-    tags: ['Azure', 'Python', 'Linux']
-  }
 ]
 </script>
 
