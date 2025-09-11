@@ -2,6 +2,8 @@
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import AppButton from '@/components/AppButton.vue'
+import { db } from '@/main.js'
+import { collection, addDoc, serverTimestamp } from 'firebase/firestore'
 
 const { t } = useI18n()
 
@@ -13,10 +15,56 @@ const formData = ref({
   message: ''
 })
 
-const handleSubmit = (e) => {
+const isSubmitting = ref(false)
+const submitStatus = ref({ type: '', message: '' })
+
+const handleSubmit = async (e) => {
   e.preventDefault()
-  const mailtoLink = `mailto:angenor99@gmail.com?subject=${encodeURIComponent(formData.value.subject)}&body=${encodeURIComponent(formData.value.message + '\n\nFrom: ' + formData.value.fullName + '\nEmail: ' + formData.value.email + '\nPhone: ' + formData.value.phone)}`
-  window.location.href = mailtoLink
+  
+  isSubmitting.value = true
+  submitStatus.value = { type: '', message: '' }
+  
+  try {
+    // Save to Firestore
+    await addDoc(collection(db, 'contact_messages'), {
+      ...formData.value,
+      timestamp: serverTimestamp(),
+      read: false
+    })
+    
+    // Show success message
+    submitStatus.value = {
+      type: 'success',
+      message: t('contact.form.successMessage') || 'Message sent successfully!'
+    }
+    
+    // Also send email
+    const mailtoLink = `mailto:angenor99@gmail.com?subject=${encodeURIComponent(formData.value.subject)}&body=${encodeURIComponent(formData.value.message + '\n\nFrom: ' + formData.value.fullName + '\nEmail: ' + formData.value.email + '\nPhone: ' + formData.value.phone)}`
+    window.location.href = mailtoLink
+    
+    // Reset form
+    formData.value = {
+      fullName: '',
+      email: '',
+      phone: '',
+      subject: '',
+      message: ''
+    }
+    
+    // Clear success message after 5 seconds
+    setTimeout(() => {
+      submitStatus.value = { type: '', message: '' }
+    }, 5000)
+    
+  } catch (error) {
+    console.error('Error saving message:', error)
+    submitStatus.value = {
+      type: 'error',
+      message: t('contact.form.errorMessage') || 'Error sending message. Please try again.'
+    }
+  } finally {
+    isSubmitting.value = false
+  }
 }
 </script>
 
@@ -102,6 +150,22 @@ const handleSubmit = (e) => {
 
         <!-- Contact Form -->
         <form @submit="handleSubmit" class="space-y-6 animate-slide-in-right animation-delay-400">
+          <!-- Success/Error Message -->
+          <div 
+            v-if="submitStatus.message"
+            :class="[
+              'p-4 rounded-lg text-center animate-fade-in-up',
+              submitStatus.type === 'success' 
+                ? 'bg-green-100 dark:bg-green-900/20 text-green-700 dark:text-green-400 border border-green-300 dark:border-green-700'
+                : 'bg-red-100 dark:bg-red-900/20 text-red-700 dark:text-red-400 border border-red-300 dark:border-red-700'
+            ]"
+          >
+            <FontAwesomeIcon 
+              :icon="submitStatus.type === 'success' ? 'fa-solid fa-check-circle' : 'fa-solid fa-exclamation-circle'"
+              class="mr-2"
+            />
+            {{ submitStatus.message }}
+          </div>
           <div class="grid md:grid-cols-2 gap-4 animate-slide-in-right animation-delay-500">
             <input
               v-model="formData.fullName"
@@ -147,10 +211,17 @@ const handleSubmit = (e) => {
             type="submit"
             variant="primary"
             size="lg"
-            icon="fa-solid fa-paper-plane"
-            class="w-full animate-slide-in-right animation-delay-800 hover:scale-105 transition-all duration-300"
+            :icon="isSubmitting ? 'fa-solid fa-spinner' : 'fa-solid fa-paper-plane'"
+            :disabled="isSubmitting"
+            class="w-full animate-slide-in-right animation-delay-800 hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            {{ $t('contact.form.send') }}
+            <span v-if="isSubmitting">
+              <FontAwesomeIcon icon="fa-solid fa-spinner" class="animate-spin mr-2" />
+              {{ $t('contact.form.sending') || 'Sending...' }}
+            </span>
+            <span v-else>
+              {{ $t('contact.form.send') }}
+            </span>
           </AppButton>
         </form>
       </div>

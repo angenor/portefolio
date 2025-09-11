@@ -129,8 +129,8 @@ const downloadCV = () => {
         </div>
 
         <!-- Profile Image -->
-        <div class="flex justify-center animate-slide-in-right animation-delay-300">
-          <div class="relative hover:scale-105 transition-all duration-500">
+        <div class="flex justify-center animate-slide-in-right animation-delay-300 ">
+          <div class="relative hover:scale-105 transition-all duration-300 animate-bounce-slow">
             <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full blur-3xl opacity-20 animate-pulse"></div>
             <img 
               src="/images/profile.jpg" 
@@ -218,5 +218,18 @@ const downloadCV = () => {
 .animation-delay-600 {
   animation-delay: 0.6s;
   opacity: 0;
+}
+
+@keyframes bounce-slow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 2s ease-in-out infinite;
 }
 </style>

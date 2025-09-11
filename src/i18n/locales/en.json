@@ -98,7 +98,10 @@
       "phone": "Phone Number",
       "subject": "Subject",
       "message": "Your Message",
-      "send": "Send Message"
+      "send": "Send Message",
+      "sending": "Sending...",
+      "successMessage": "Message sent successfully! I'll get back to you soon.",
+      "errorMessage": "Error sending message. Please try again."
     },
     "info": {
       "email": "Email",
