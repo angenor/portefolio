@@ -38,10 +38,6 @@ const handleSubmit = async (e) => {
       message: t('contact.form.successMessage') || 'Message sent successfully!'
     }
     
-    // Also send email
-    const mailtoLink = `mailto:angenor99@gmail.com?subject=${encodeURIComponent(formData.value.subject)}&body=${encodeURIComponent(formData.value.message + '\n\nFrom: ' + formData.value.fullName + '\nEmail: ' + formData.value.email + '\nPhone: ' + formData.value.phone)}`
-    window.location.href = mailtoLink
-    
     // Reset form
     formData.value = {
       fullName: '',
