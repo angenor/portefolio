@@ -6,7 +6,7 @@ import HeaderNav from '@/components/HeaderNav.vue'
 <template>
   <div id="app" class="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-200">
     <HeaderNav />
-    <main>
+    <main class="pt-16">
       <RouterView />
     </main>
   </div>

@@ -41,31 +41,32 @@ const hoverColorClasses = {
 
 <template>
   <div 
-    class="bg-white dark:bg-gray-900 rounded-xl p-8 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300"
+    class="bg-white dark:bg-gray-900 rounded-xl p-8 shadow-lg hover:shadow-2xl transform hover:-translate-y-4 hover:scale-105 transition-all duration-500 group"
     :class="hoverColorClasses[color]"
   >
     <div 
-      class="w-20 h-20 rounded-full flex items-center justify-center mb-6 mx-auto"
+      class="w-20 h-20 rounded-full flex items-center justify-center mb-6 mx-auto group-hover:scale-110 group-hover:rotate-6 transition-all duration-500"
       :class="colorClasses[color]"
     >
-      <FontAwesomeIcon :icon="icon" class="text-3xl" />
+      <FontAwesomeIcon :icon="icon" class="text-3xl group-hover:animate-pulse" />
     </div>
     
-    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4 text-center">
+    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4 text-center group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300">
       {{ title }}
     </h3>
     
-    <p class="text-gray-600 dark:text-gray-400 text-center mb-6">
+    <p class="text-gray-600 dark:text-gray-400 text-center mb-6 group-hover:text-gray-800 dark:group-hover:text-gray-200 transition-colors duration-300">
       {{ description }}
     </p>
     
-    <div class="text-center">
+    <!-- <div class="text-center opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">
       <AppButton 
         variant="outline"
         size="sm"
+        class="hover:scale-110 transition-all duration-300"
       >
         {{ t('services.readMore') }}
       </AppButton>
-    </div>
+    </div> -->
   </div>
 </template>

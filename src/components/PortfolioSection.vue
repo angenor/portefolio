@@ -112,20 +112,21 @@ const projects = [
 <template>
   <section id="portfolio" class="py-20 bg-white dark:bg-gray-900 transition-colors duration-300">
     <div class="container mx-auto px-4">
-      <div class="text-center mb-12">
-        <h2 class="text-4xl font-bold text-gray-900 dark:text-white mb-2">
+      <div class="text-center mb-12 animate-fade-in-up">
+        <h2 class="text-4xl font-bold text-gray-900 dark:text-white mb-2 animate-slide-in-down animation-delay-100">
           {{ $t('portfolio.title') }}
         </h2>
-        <p class="text-blue-600 dark:text-blue-400 text-lg">{{ $t('portfolio.subtitle') }}</p>
-        <div class="w-20 h-1 bg-blue-600 mx-auto mt-4"></div>
+        <p class="text-blue-600 dark:text-blue-400 text-lg animate-slide-in-down animation-delay-200">{{ $t('portfolio.subtitle') }}</p>
+        <div class="w-20 h-1 bg-blue-600 mx-auto mt-4 animate-scale-in animation-delay-300"></div>
       </div>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div
-          v-for="project in projects"
+          v-for="(project, index) in projects"
           :key="project.id"
           @click="openProjectGallery(project)"
           class="cursor-pointer"
+          :class="`animate-slide-in-up animation-delay-${400 + index * 100}`"
         >
           <ProjectCard
             :title="project.title.includes('.') ? $t(project.title) : project.title"
@@ -146,3 +147,75 @@ const projects = [
     </div>
   </section>
 </template>
+
+<style scoped>
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-down {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out forwards;
+}
+
+.animate-slide-in-down {
+  animation: slide-in-down 0.8s ease-out forwards;
+}
+
+.animate-slide-in-up {
+  animation: slide-in-up 0.8s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scale-in 0.6s ease-out forwards;
+}
+
+.animation-delay-100 { animation-delay: 0.1s; opacity: 0; }
+.animation-delay-200 { animation-delay: 0.2s; opacity: 0; }
+.animation-delay-300 { animation-delay: 0.3s; opacity: 0; }
+.animation-delay-400 { animation-delay: 0.4s; opacity: 0; }
+.animation-delay-500 { animation-delay: 0.5s; opacity: 0; }
+.animation-delay-600 { animation-delay: 0.6s; opacity: 0; }
+.animation-delay-700 { animation-delay: 0.7s; opacity: 0; }
+.animation-delay-800 { animation-delay: 0.8s; opacity: 0; }
+.animation-delay-900 { animation-delay: 0.9s; opacity: 0; }
+</style>
