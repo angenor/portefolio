@@ -16,7 +16,7 @@
     "greeting": "Hello, It's Me",
     "name": "Angenor N'Gouandi",
     "roles": "And I'm a",
-    "description": "IT Expert at the International Organisation of La Francophonie, passionate Full Stack Developer with expertise in Flutter, Laravel, VueJs and more. I create innovative solutions that make a difference.",
+    "description": "IT Consultant at the International Organisation of La Francophonie. Full Stack Developer with over 5 years of experience, specialized in mobile development (Flutter) and web (Laravel, VueJs). Technical trainer (Orange CI, RMO, ESATIC) and passionate about applied AI.",
     "downloadCV": "Download my CV"
   },
   "home": {
@@ -27,8 +27,8 @@
   },
   "about": {
     "title": "About Me",
-    "subtitle": "Full Stack Developer & Instructor",
-    "description": "IT Expert at the International Organisation of La Francophonie with a passion for web and mobile development. I also teach at ESATIC where I train the next generation of developers.",
+    "subtitle": "Full Stack Developer & OIF Consultant",
+    "description": "IT Consultant at the International Organisation of La Francophonie with over 5 years of experience. Specialized in mobile development (Flutter) and web (Laravel, VueJs). Technical trainer (Orange CI, RMO, ESATIC) and passionate about applied AI, including intelligent chatbot development.",
     "readMore": "Read More",
     "experience": "Experience",
     "education": "Education",
@@ -52,6 +52,10 @@
     "academicTeaching": {
       "title": "Academic Teaching",
       "description": "Instructor at ESATIC since 2023, training Licence 3 students in Web Programming and Multimedia."
+    },
+    "aiChatbot": {
+      "title": "AI & Chatbots",
+      "description": "Development of intelligent chatbots with Gemini and applied AI solutions, including multilingual translation via ElevenLabs AI."
     },
     "readMore": "Read More"
   },
@@ -86,12 +90,30 @@
       "title": "Intensive Python Training",
       "description": "Intensive Python programming training, intended for experienced professionals at RMO."
     },
+    "universiteSenghor": {
+      "title": "Université Senghor",
+      "description": "Complete redesign of the Université Senghor de la Francophonie web platform."
+    },
+    "epavillonClimatique": {
+      "title": "Epavillon Climatique",
+      "description": "Platform for managing submitted activities for the Francophonie Pavilion at COP events."
+    },
+    "miningObsMadagascar": {
+      "title": "Madagascar Mining Observatory",
+      "description": "Development of the Madagascar Mining Observatory website."
+    },
+    "suiviRevenusMiniers": {
+      "title": "Mining Revenue Tracking",
+      "description": "Digital platform for tracking the use of mining revenues by territorial communities in Madagascar."
+    },
     "viewProject": "View Project",
     "visitProject": "Visit Project"
   },
   "contact": {
     "title": "Contact Me",
     "subtitle": "Contact",
+    "getInTouch": "Get in Touch",
+    "interested": "I'm always interested in hearing about new projects and opportunities.",
     "form": {
       "fullName": "Full Name",
       "email": "Email Address",

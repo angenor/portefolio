@@ -105,7 +105,42 @@ const projects = [
       '/images/projets/formationRMO/photo3.jpeg'
     ]
   },
-  
+  {
+    id: 6,
+    title: 'portfolio.universiteSenghor.title',
+    description: 'portfolio.universiteSenghor.description',
+    image: '/images/projets/placeholder.svg',
+    link: 'http://137.74.117.231/',
+    tags: ['Laravel', 'Vue.js', 'Freelance'],
+    gallery: []
+  },
+  {
+    id: 7,
+    title: 'portfolio.epavillonClimatique.title',
+    description: 'portfolio.epavillonClimatique.description',
+    image: '/images/projets/placeholder.svg',
+    link: 'https://epavillonclimatique.francophonie.org/',
+    tags: ['Laravel', 'Vue.js', 'OIF'],
+    gallery: []
+  },
+  {
+    id: 8,
+    title: 'portfolio.miningObsMadagascar.title',
+    description: 'portfolio.miningObsMadagascar.description',
+    image: '/images/projets/placeholder.svg',
+    link: 'https://miningobs.mg/',
+    tags: ['Laravel', 'Freelance', 'Madagascar'],
+    gallery: []
+  },
+  {
+    id: 9,
+    title: 'portfolio.suiviRevenusMiniers.title',
+    description: 'portfolio.suiviRevenusMiniers.description',
+    image: '/images/projets/placeholder.svg',
+    link: 'https://kaominina-mangarahara.mg/',
+    tags: ['Laravel', 'Freelance', 'Madagascar'],
+    gallery: []
+  }
 ]
 </script>
 

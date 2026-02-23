@@ -28,14 +28,16 @@ const colorClasses = {
   blue: 'text-blue-600 bg-blue-100 dark:text-blue-400 dark:bg-blue-900/20',
   green: 'text-green-600 bg-green-100 dark:text-green-400 dark:bg-green-900/20',
   purple: 'text-purple-600 bg-purple-100 dark:text-purple-400 dark:bg-purple-900/20',
-  orange: 'text-orange-600 bg-orange-100 dark:text-orange-400 dark:bg-orange-900/20'
+  orange: 'text-orange-600 bg-orange-100 dark:text-orange-400 dark:bg-orange-900/20',
+  red: 'text-red-600 bg-red-100 dark:text-red-400 dark:bg-red-900/20'
 }
 
 const hoverColorClasses = {
   blue: 'hover:shadow-blue-500/20',
   green: 'hover:shadow-green-500/20',
   purple: 'hover:shadow-purple-500/20',
-  orange: 'hover:shadow-orange-500/20'
+  orange: 'hover:shadow-orange-500/20',
+  red: 'hover:shadow-red-500/20'
 }
 </script>
 

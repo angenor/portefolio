@@ -80,10 +80,10 @@ const handleSubmit = async (e) => {
         <div class="space-y-8 animate-slide-in-left animation-delay-400">
           <div>
             <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-6 animate-slide-in-left animation-delay-500">
-              Get in Touch
+              {{ $t('contact.getInTouch') }}
             </h3>
             <p class="text-gray-600 dark:text-gray-400 mb-8 animate-slide-in-left animation-delay-600">
-              I'm always interested in hearing about new projects and opportunities.
+              {{ $t('contact.interested') }}
             </p>
           </div>
 

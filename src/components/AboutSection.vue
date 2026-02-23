@@ -5,22 +5,35 @@ import AppButton from '@/components/AppButton.vue'
 const { t } = useI18n()
 
 const skills = {
-  frontend: ['VueJs', 'Flutter', 'Tailwind CSS', 'HTML', 'Javascript'],
-  backend: ['Laravel', 'PHP', 'Python', 'Flask', 'Firebase'],
-  tools: ['Qt/C++', 'Git', 'CPanel', 'Zoom API', 'YouTube API']
+  mobile: ['Flutter', 'Firebase', 'Supabase'],
+  backend: ['Laravel', 'FastAPI', 'Python'],
+  frontend: ['VueJs', 'Nuxtjs', 'Tailwind CSS'],
+  other: ['Qt/C++', 'Machine Learning', 'Claude Code']
 }
 
 const experience = [
   {
-    title: 'Expert Informatique',
+    title: 'Consultant Informatique',
     company: 'Organisation Internationale de la Francophonie',
     period: 'Mai 2021 - Aujourd\'hui',
     location: 'Québec, Canada (Télétravail)'
   },
   {
-    title: 'Enseignant en Informatique',
+    title: 'Formateur Python',
+    company: 'RMO Capital Humain',
+    period: 'Août 2025',
+    location: 'Abidjan, Côte d\'Ivoire'
+  },
+  {
+    title: 'Enseignant Vacataire en Informatique',
     company: 'ESATIC',
     period: 'Oct 2023 - Aujourd\'hui',
+    location: 'Abidjan, Côte d\'Ivoire'
+  },
+  {
+    title: 'Formateur Flutter',
+    company: 'Orange Côte d\'Ivoire',
+    period: 'Avril 2023',
     location: 'Abidjan, Côte d\'Ivoire'
   }
 ]
@@ -84,7 +97,7 @@ const experience = [
             </h4>
             <div class="flex flex-wrap gap-2">
               <span 
-                v-for="(skill, index) in [...skills.frontend, ...skills.backend, ...skills.tools]" 
+                v-for="(skill, index) in [...skills.mobile, ...skills.backend, ...skills.frontend, ...skills.other]" 
                 :key="skill"
                 :class="`animate-scale-in animation-delay-${1100 + index * 50}`"
                 class="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full text-sm hover:bg-blue-100 dark:hover:bg-blue-900 hover:text-blue-600 dark:hover:text-blue-400 hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-default"

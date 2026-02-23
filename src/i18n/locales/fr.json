@@ -16,7 +16,7 @@
     "greeting": "Bonjour, c'est moi",
     "name": "Angenor N'Gouandi",
     "roles": "Et je suis",
-    "description": "Expert Informatique à l'Organisation Internationale de la Francophonie, développeur Full Stack passionné avec une expertise en Flutter, Laravel, VueJs et plus. Je crée des solutions innovantes qui font la différence.",
+    "description": "Consultant Informatique à l'Organisation Internationale de la Francophonie. Développeur Full Stack avec plus de 5 ans d'expérience, spécialisé en développement mobile (Flutter) et web (Laravel, VueJs). Formateur technique (Orange CI, RMO, ESATIC) et passionné par l'IA appliquée.",
     "downloadCV": "Télécharger mon CV"
   },
   "home": {
@@ -27,8 +27,8 @@
   },
   "about": {
     "title": "À propos de moi",
-    "subtitle": "Développeur Full Stack & Enseignant",
-    "description": "Expert Informatique à l'Organisation Internationale de la Francophonie avec une passion pour le développement web et mobile. J'enseigne également à l'ESATIC où je forme la prochaine génération de développeurs.",
+    "subtitle": "Développeur Full Stack & Consultant OIF",
+    "description": "Consultant Informatique à l'Organisation Internationale de la Francophonie avec plus de 5 ans d'expérience. Spécialisé en développement mobile (Flutter) et web (Laravel, VueJs). Formateur technique (Orange CI, RMO, ESATIC) et passionné par l'IA appliquée, notamment le développement de chatbots intelligents.",
     "readMore": "En savoir plus",
     "experience": "Expérience",
     "education": "Formation",
@@ -52,6 +52,10 @@
     "academicTeaching": {
       "title": "Enseignement Académique",
       "description": "Enseignant à l'ESATIC depuis 2023, je forme les étudiants en Licence 3 en Programmation Web et Multimédia."
+    },
+    "aiChatbot": {
+      "title": "IA & Chatbots",
+      "description": "Développement de chatbots intelligents avec Gemini et solutions d'IA appliquée, incluant la traduction multilingue via ElevenLabs AI."
     },
     "readMore": "En savoir plus"
   },
@@ -86,12 +90,30 @@
       "title": "Formation intensive Python",
       "description": "Formation intensive en programmation Python, destinée aux professionnels expérimentés de chez RMO."
     },
+    "universiteSenghor": {
+      "title": "Université Senghor",
+      "description": "Refonte complète de la plateforme web de l'Université Senghor de la Francophonie."
+    },
+    "epavillonClimatique": {
+      "title": "Epavillon Climatique",
+      "description": "Plateforme de gestion des activités soumises pour le Pavillon de la Francophonie lors des COP."
+    },
+    "miningObsMadagascar": {
+      "title": "Observatoire des Mines de Madagascar",
+      "description": "Développement du site web de l'Observatoire des Mines de Madagascar."
+    },
+    "suiviRevenusMiniers": {
+      "title": "Suivi des Revenus Miniers",
+      "description": "Plateforme numérique de suivi de l'utilisation des revenus miniers des collectivités territoriales de Madagascar."
+    },
     "viewProject": "Voir le projet",
     "visitProject": "Visiter le projet"
   },
   "contact": {
     "title": "Me Contacter",
     "subtitle": "Contact",
+    "getInTouch": "Restons en Contact",
+    "interested": "Je suis toujours ouvert à discuter de nouveaux projets et opportunités.",
     "form": {
       "fullName": "Nom complet",
       "email": "Adresse email",

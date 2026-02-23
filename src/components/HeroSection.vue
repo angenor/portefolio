@@ -8,9 +8,9 @@ const { t } = useI18n()
 const roles = ref([
   'Full Stack Developer',
   'Mobile Developer',
-  'IT Expert',
+  'IT Consultant',
   'Instructor',
-  'Consultant'
+  'AI Enthusiast'
 ])
 
 const currentRoleIndex = ref(0)
@@ -58,7 +58,7 @@ const deleteWriter = () => {
 }
 
 const downloadCV = () => {
-  window.open('/assets/CV_Angenor_NGOUANDI_Sep_FR.pdf', '_blank')
+  window.open('/assets/CV_Angenor_NGOUANDI_FR.pdf', '_blank')
 }
 </script>
 

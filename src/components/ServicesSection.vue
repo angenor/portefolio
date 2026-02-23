@@ -28,6 +28,12 @@ const services = [
     title: 'services.academicTeaching.title',
     description: 'services.academicTeaching.description',
     color: 'orange'
+  },
+  {
+    icon: 'fa-solid fa-robot',
+    title: 'services.aiChatbot.title',
+    description: 'services.aiChatbot.description',
+    color: 'red'
   }
 ]
 </script>
@@ -44,7 +50,7 @@ const services = [
         <div class="w-20 h-1 bg-blue-600 mx-auto mt-4 animate-scale-in animation-delay-300"></div>
       </div>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <ServiceCard
           v-for="(service, index) in services"
           :key="service.title"
