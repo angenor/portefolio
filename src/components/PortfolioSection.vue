@@ -181,6 +181,7 @@ const projects = [
             :image="project.image"
             :link="project.link"
             :tags="project.tags"
+            :github-url="project.githubUrl"
           />
         </div>
       </div>
