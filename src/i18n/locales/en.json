@@ -23,7 +23,7 @@
       "instructor": "Instructor",
       "ai": "AI Enthusiast"
     },
-    "description": "IT Consultant at the International Organisation of La Francophonie. Full Stack Developer with over 5 years of experience, specialized in mobile development (Flutter) and web (Laravel, VueJs). Technical trainer (Orange CI, RMO, ESATIC) and passionate about applied AI.",
+    "description": "IT Consultant at the International Organisation of La Francophonie. Full Stack Developer with over 5 years of experience, specialized in mobile development (Flutter) and web (Laravel, FastAPI, Nuxt/VueJs). Technical trainer (Orange CI, RMO, ESATIC) and passionate about applied AI.",
     "downloadCV": "Download my CV"
   },
   "home": {
@@ -35,7 +35,7 @@
   "about": {
     "title": "About Me",
     "subtitle": "Full Stack Developer & OIF Consultant",
-    "description": "IT Consultant at the International Organisation of La Francophonie with over 5 years of experience. Specialized in mobile development (Flutter) and web (Laravel, VueJs). Technical trainer (Orange CI, RMO, ESATIC) and passionate about applied AI, including intelligent chatbot development.",
+    "description": "IT Consultant at the International Organisation of La Francophonie with over 5 years of experience. Specialized in mobile development (Flutter) and web (Laravel, FastAPI, Nuxt/VueJs). Technical trainer (Orange CI, RMO, ESATIC) and passionate about applied AI, including intelligent chatbot development.",
     "readMore": "Read More",
     "experience": "Experience",
     "education": "Education",
@@ -96,6 +96,10 @@
     "formationRMO": {
       "title": "Intensive Python Training",
       "description": "Intensive Python programming training, intended for experienced professionals at RMO."
+    },
+    "esatic": {
+      "title": "Lecturer — ESATIC",
+      "description": "IT Lecturer at ESATIC. Training Licence 3 students in Web Programming and Multimedia. Member of the Licence 3 defense jury."
     },
     "universiteSenghor": {
       "title": "Université Senghor",

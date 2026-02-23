@@ -107,6 +107,18 @@ const projects = [
   },
   {
     id: 6,
+    title: 'portfolio.esatic.title',
+    description: 'portfolio.esatic.description',
+    image: '/images/projets/esatic/capture1.jpeg',
+    link: '#',
+    tags: ['Enseignement', 'ESATIC', 'HTML', 'CSS', 'PHP', 'JavaScript'],
+    gallery: [
+      '/images/projets/esatic/capture1.jpeg',
+      '/images/projets/esatic/capture2.jpeg'
+    ]
+  },
+  {
+    id: 7,
     title: 'portfolio.universiteSenghor.title',
     description: 'portfolio.universiteSenghor.description',
     image: '/images/projets/placeholder.svg',
@@ -115,7 +127,7 @@ const projects = [
     gallery: []
   },
   {
-    id: 7,
+    id: 8,
     title: 'portfolio.epavillonClimatique.title',
     description: 'portfolio.epavillonClimatique.description',
     image: '/images/projets/placeholder.svg',
@@ -124,7 +136,7 @@ const projects = [
     gallery: []
   },
   {
-    id: 8,
+    id: 9,
     title: 'portfolio.miningObsMadagascar.title',
     description: 'portfolio.miningObsMadagascar.description',
     image: '/images/projets/placeholder.svg',
@@ -133,7 +145,7 @@ const projects = [
     gallery: []
   },
   {
-    id: 9,
+    id: 10,
     title: 'portfolio.suiviRevenusMiniers.title',
     description: 'portfolio.suiviRevenusMiniers.description',
     image: '/images/projets/placeholder.svg',
@@ -253,4 +265,8 @@ const projects = [
 .animation-delay-700 { animation-delay: 0.7s; opacity: 0; }
 .animation-delay-800 { animation-delay: 0.8s; opacity: 0; }
 .animation-delay-900 { animation-delay: 0.9s; opacity: 0; }
+.animation-delay-1000 { animation-delay: 1s; opacity: 0; }
+.animation-delay-1100 { animation-delay: 1.1s; opacity: 0; }
+.animation-delay-1200 { animation-delay: 1.2s; opacity: 0; }
+.animation-delay-1300 { animation-delay: 1.3s; opacity: 0; }
 </style>
