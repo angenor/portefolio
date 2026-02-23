@@ -76,8 +76,14 @@ const deleteWriter = () => {
   }, 50)
 }
 
+const cvUrl = computed(() => {
+  return locale.value === 'fr'
+    ? '/assets/CV_Angenor_NGOUANDI_FR.pdf'
+    : '/assets/CV_Angenor_NGOUANDI_EN.pdf'
+})
+
 const downloadCV = () => {
-  window.open('/assets/CV_Angenor_NGOUANDI_FR.pdf', '_blank')
+  window.open(cvUrl.value, '_blank')
 }
 </script>
 
