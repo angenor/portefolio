@@ -16,6 +16,13 @@
     "greeting": "Hello, It's Me",
     "name": "Angenor N'Gouandi",
     "roles": "And I'm a",
+    "rolesList": {
+      "fullstack": "Full Stack Developer",
+      "mobile": "Mobile Developer",
+      "consultant": "IT Consultant",
+      "instructor": "Instructor",
+      "ai": "AI Enthusiast"
+    },
     "description": "IT Consultant at the International Organisation of La Francophonie. Full Stack Developer with over 5 years of experience, specialized in mobile development (Flutter) and web (Laravel, VueJs). Technical trainer (Orange CI, RMO, ESATIC) and passionate about applied AI.",
     "downloadCV": "Download my CV"
   },

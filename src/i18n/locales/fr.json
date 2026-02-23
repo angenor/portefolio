@@ -16,6 +16,13 @@
     "greeting": "Bonjour, c'est moi",
     "name": "Angenor N'Gouandi",
     "roles": "Et je suis",
+    "rolesList": {
+      "fullstack": "Développeur Full Stack",
+      "mobile": "Développeur Mobile",
+      "consultant": "Consultant IT",
+      "instructor": "Formateur",
+      "ai": "Passionné d'IA"
+    },
     "description": "Consultant Informatique à l'Organisation Internationale de la Francophonie. Développeur Full Stack avec plus de 5 ans d'expérience, spécialisé en développement mobile (Flutter) et web (Laravel, VueJs). Formateur technique (Orange CI, RMO, ESATIC) et passionné par l'IA appliquée.",
     "downloadCV": "Télécharger mon CV"
   },

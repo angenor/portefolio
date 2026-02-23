@@ -1,23 +1,40 @@
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, computed, onMounted, onUnmounted, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import AppButton from '@/components/AppButton.vue'
 
-const { t } = useI18n()
+const { t, locale } = useI18n()
 
-const roles = ref([
-  'Full Stack Developer',
-  'Mobile Developer',
-  'IT Consultant',
-  'Instructor',
-  'AI Enthusiast'
-])
+const roleKeys = ['fullstack', 'mobile', 'consultant', 'instructor', 'ai']
+
+const roles = computed(() => roleKeys.map(key => t(`hero.rolesList.${key}`)))
 
 const currentRoleIndex = ref(0)
 const currentRole = ref('')
 const isTyping = ref(true)
+let activeInterval = null
+let activeTimeout = null
+
+const clearTimers = () => {
+  if (activeInterval) clearInterval(activeInterval)
+  if (activeTimeout) clearTimeout(activeTimeout)
+  activeInterval = null
+  activeTimeout = null
+}
 
 onMounted(() => {
+  typeWriter()
+})
+
+onUnmounted(() => {
+  clearTimers()
+})
+
+// When locale changes, restart the animation with translated roles
+watch(locale, () => {
+  clearTimers()
+  currentRole.value = ''
+  currentRoleIndex.value = 0
   typeWriter()
 })
 
@@ -26,13 +43,14 @@ const typeWriter = () => {
   let charIndex = 0
   isTyping.value = true
 
-  const typeInterval = setInterval(() => {
+  activeInterval = setInterval(() => {
     if (charIndex < role.length) {
       currentRole.value = role.substring(0, charIndex + 1)
       charIndex++
     } else {
-      clearInterval(typeInterval)
-      setTimeout(() => {
+      clearInterval(activeInterval)
+      activeInterval = null
+      activeTimeout = setTimeout(() => {
         deleteWriter()
       }, 2000)
     }
@@ -43,14 +61,15 @@ const deleteWriter = () => {
   isTyping.value = false
   let charIndex = currentRole.value.length
 
-  const deleteInterval = setInterval(() => {
+  activeInterval = setInterval(() => {
     if (charIndex > 0) {
       currentRole.value = currentRole.value.substring(0, charIndex - 1)
       charIndex--
     } else {
-      clearInterval(deleteInterval)
+      clearInterval(activeInterval)
+      activeInterval = null
       currentRoleIndex.value = (currentRoleIndex.value + 1) % roles.value.length
-      setTimeout(() => {
+      activeTimeout = setTimeout(() => {
         typeWriter()
       }, 500)
     }
