@@ -162,7 +162,7 @@ const handleSubmit = async (e) => {
             />
             {{ submitStatus.message }}
           </div>
-          <div class="grid md:grid-cols-2 gap-4 animate-slide-in-right animation-delay-500">
+          <div class=" dark:text-white grid md:grid-cols-2 gap-4 animate-slide-in-right animation-delay-500">
             <input
               v-model="formData.fullName"
               type="text"
@@ -179,7 +179,7 @@ const handleSubmit = async (e) => {
             />
           </div>
           
-          <div class="grid md:grid-cols-2 gap-4 animate-slide-in-right animation-delay-600">
+          <div class="dark:text-white grid md:grid-cols-2 gap-4 animate-slide-in-right animation-delay-600">
             <input
               v-model="formData.phone"
               type="tel"
@@ -200,7 +200,7 @@ const handleSubmit = async (e) => {
             :placeholder="$t('contact.form.message')"
             rows="6"
             required
-            class="w-full px-4 py-3 rounded-lg bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-700 focus:border-blue-600 dark:focus:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-500/20 resize-none animate-slide-in-right animation-delay-700 focus:scale-105 transition-all duration-300"
+            class="dark:text-white w-full px-4 py-3 rounded-lg bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-700 focus:border-blue-600 dark:focus:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-500/20 resize-none animate-slide-in-right animation-delay-700 focus:scale-105 transition-all duration-300"
           ></textarea>
 
           <AppButton 
