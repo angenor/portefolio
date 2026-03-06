@@ -128,15 +128,6 @@ const projects = [
   },
   {
     id: 8,
-    title: 'portfolio.epavillonClimatique.title',
-    description: 'portfolio.epavillonClimatique.description',
-    image: '/images/projets/placeholder.svg',
-    link: 'https://epavillonclimatique.francophonie.org/',
-    tags: ['Laravel', 'Vue.js', 'OIF'],
-    gallery: []
-  },
-  {
-    id: 9,
     title: 'portfolio.miningObsMadagascar.title',
     description: 'portfolio.miningObsMadagascar.description',
     image: '/images/projets/placeholder.svg',
@@ -145,7 +136,7 @@ const projects = [
     gallery: []
   },
   {
-    id: 10,
+    id: 9,
     title: 'portfolio.suiviRevenusMiniers.title',
     description: 'portfolio.suiviRevenusMiniers.description',
     image: '/images/projets/placeholder.svg',
