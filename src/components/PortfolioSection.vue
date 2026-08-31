@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue'
+import { computed, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import ProjectCard from '@/components/ProjectCard.vue'
 import ProjectGalleryModal from '@/components/ProjectGalleryModal.vue'
@@ -22,19 +22,24 @@ const closeModal = () => {
 const projects = [
   {
     id: 1,
-    title: 'portfolio.uafricas.title',
-    description: 'portfolio.uafricas.description',
-    image: '/images/projets/uafricas/capture1.png',
-    link: 'https://africans-world.org/',
-    tags: ['Laravel', 'Vue.js', 'API', 'Université'],
+    title: 'portfolio.universiteSenghor.title',
+    description: 'portfolio.universiteSenghor.description',
+    image: '/images/projets/usenghor/capture1.png',
+    link: 'https://usenghor-francophonie.org/',
+    tags: ['Laravel', 'Vue.js', 'Freelance'],
     gallery: [
-      '/images/projets/uafricas/capture1.png',
-      '/images/projets/uafricas/capture2.png',
-      '/images/projets/uafricas/capture3.png',
-      '/images/projets/uafricas/capture4.png',
-      '/images/projets/uafricas/capture5.png',
-      '/images/projets/uafricas/capture6.png',
-      '/images/projets/uafricas/capture7.png'
+      '/images/projets/usenghor/capture1.png',
+      '/images/projets/usenghor/capture2.png',
+      '/images/projets/usenghor/capture3.png',
+      '/images/projets/usenghor/capture4.png',
+      '/images/projets/usenghor/capture5.png',
+      '/images/projets/usenghor/capture6.png',
+      '/images/projets/usenghor/capture7.png',
+      '/images/projets/usenghor/capture8.png',
+      '/images/projets/usenghor/capture9.png',
+      '/images/projets/usenghor/capture10.png',
+      '/images/projets/usenghor/capture11.png',
+      '/images/projets/usenghor/capture12.png'
     ]
   },
   {
@@ -132,28 +137,6 @@ const projects = [
   },
   {
     id: 7,
-    title: 'portfolio.universiteSenghor.title',
-    description: 'portfolio.universiteSenghor.description',
-    image: '/images/projets/usenghor/capture1.png',
-    link: 'https://usenghor-francophonie.org/',
-    tags: ['Laravel', 'Vue.js', 'Freelance'],
-    gallery: [
-      '/images/projets/usenghor/capture1.png',
-      '/images/projets/usenghor/capture2.png',
-      '/images/projets/usenghor/capture3.png',
-      '/images/projets/usenghor/capture4.png',
-      '/images/projets/usenghor/capture5.png',
-      '/images/projets/usenghor/capture6.png',
-      '/images/projets/usenghor/capture7.png',
-      '/images/projets/usenghor/capture8.png',
-      '/images/projets/usenghor/capture9.png',
-      '/images/projets/usenghor/capture10.png',
-      '/images/projets/usenghor/capture11.png',
-      '/images/projets/usenghor/capture12.png'
-    ]
-  },
-  {
-    id: 8,
     title: 'portfolio.suiviRevenusMiniers.title',
     description: 'portfolio.suiviRevenusMiniers.description',
     image: '/images/projets/revenus_miniers/capture1.png',
@@ -164,7 +147,7 @@ const projects = [
     ]
   },
   {
-    id: 9,
+    id: 8,
     title: 'portfolio.esatic.title',
     description: 'portfolio.esatic.description',
     image: '/images/projets/esatic/capture1.jpeg',
@@ -176,7 +159,7 @@ const projects = [
     ]
   },
   {
-    id: 10,
+    id: 9,
     title: 'portfolio.formationOrange.title',
     description: 'portfolio.formationOrange.description',
     image: '/images/projets/formationOrange/capture1.jpeg',
@@ -189,7 +172,7 @@ const projects = [
     ]
   },
   {
-    id: 11,
+    id: 10,
     title: 'portfolio.formationRMO.title',
     description: 'portfolio.formationRMO.description',
     image: '/images/projets/formationRMO/photo1.jpeg',
@@ -200,8 +183,28 @@ const projects = [
       '/images/projets/formationRMO/photo2.jpeg',
       '/images/projets/formationRMO/photo3.jpeg'
     ]
+  },
+  {
+    id: 11,
+    title: 'portfolio.uafricas.title',
+    description: 'portfolio.uafricas.description',
+    image: '/images/projets/uafricas/capture1.png',
+    link: 'https://africans-world.org/',
+    hidden: true,
+    tags: ['Laravel', 'Vue.js', 'API', 'Université'],
+    gallery: [
+      '/images/projets/uafricas/capture1.png',
+      '/images/projets/uafricas/capture2.png',
+      '/images/projets/uafricas/capture3.png',
+      '/images/projets/uafricas/capture4.png',
+      '/images/projets/uafricas/capture5.png',
+      '/images/projets/uafricas/capture6.png',
+      '/images/projets/uafricas/capture7.png'
+    ]
   }
 ]
+
+const visibleProjects = computed(() => projects.filter((project) => !project.hidden))
 </script>
 
 <template>
@@ -217,7 +220,7 @@ const projects = [
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div
-          v-for="(project, index) in projects"
+          v-for="(project, index) in visibleProjects"
           :key="project.id"
           @click="openProjectGallery(project)"
           class="cursor-pointer"
