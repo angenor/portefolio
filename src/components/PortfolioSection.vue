@@ -180,6 +180,26 @@ const projects = [
       '/images/projets/lecarredesetudes/capture4.png',
       '/images/projets/lecarredesetudes/capture5.png'
     ]
+  },
+  {
+    id: 11,
+    title: 'portfolio.alumniEsatic.title',
+    description: 'portfolio.alumniEsatic.description',
+    image: '/images/projets/alumni-esatic/capture1.png',
+    link: 'https://alumni-esatic.com/',
+    tags: ['Nuxt', 'NestJS', 'PostgreSQL', 'Microservices'],
+    gallery: [
+      '/images/projets/alumni-esatic/capture1.png',
+      '/images/projets/alumni-esatic/capture2.png',
+      '/images/projets/alumni-esatic/capture3.png',
+      '/images/projets/alumni-esatic/capture4.png',
+      '/images/projets/alumni-esatic/capture5.png',
+      '/images/projets/alumni-esatic/capture6.png',
+      '/images/projets/alumni-esatic/capture7.png',
+      '/images/projets/alumni-esatic/capture8.png',
+      '/images/projets/alumni-esatic/capture9.png',
+      '/images/projets/alumni-esatic/capture10.png'
+    ]
   }
 ]
 </script>

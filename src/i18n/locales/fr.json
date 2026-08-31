@@ -121,6 +121,10 @@
       "title": "Le Carré des Études",
       "description": "Magazine numérique d'orientation universitaire en Côte d'Ivoire : rubriques éditoriales, éditions du magazine, résultats de concours et espace partenaires."
     },
+    "alumniEsatic": {
+      "title": "REPAE — Alumni ESATIC",
+      "description": "Plateforme du réseau professionnel des alumni de l'ESATIC : espace membre, annuaire des diplômés, offres d'emploi et vie de l'association. Architecture Nuxt et microservices NestJS."
+    },
     "viewProject": "Voir le projet",
     "visitProject": "Visiter le projet"
   },

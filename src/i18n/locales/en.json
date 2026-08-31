@@ -121,6 +121,10 @@
       "title": "Le Carré des Études",
       "description": "Digital magazine for academic guidance in Côte d'Ivoire: editorial sections, magazine issues, exam results and a partners area."
     },
+    "alumniEsatic": {
+      "title": "REPAE — ESATIC Alumni",
+      "description": "Platform for the ESATIC alumni professional network: member area, graduate directory, job offers and association news. Built with Nuxt and NestJS microservices."
+    },
     "viewProject": "View Project",
     "visitProject": "Visit Project"
   },
