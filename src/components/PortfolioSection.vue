@@ -165,6 +165,21 @@ const projects = [
     gallery: [
       '/images/projets/revenus_miniers/capture1.png'
     ]
+  },
+  {
+    id: 10,
+    title: 'portfolio.lecarreDesEtudes.title',
+    description: 'portfolio.lecarreDesEtudes.description',
+    image: '/images/projets/lecarredesetudes/capture1.png',
+    link: 'https://lecarredesetudes.com',
+    tags: ['Nuxt', 'SQLite', 'Nitro'],
+    gallery: [
+      '/images/projets/lecarredesetudes/capture1.png',
+      '/images/projets/lecarredesetudes/capture2.png',
+      '/images/projets/lecarredesetudes/capture3.png',
+      '/images/projets/lecarredesetudes/capture4.png',
+      '/images/projets/lecarredesetudes/capture5.png'
+    ]
   }
 ]
 </script>
