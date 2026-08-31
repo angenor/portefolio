@@ -97,7 +97,7 @@
     "subtitle": "Services",
     "webDev": {
       "title": "Développement Web",
-      "description": "Création de plateformes web modernes et performantes avec Vue.js, Laravel et autres technologies."
+      "description": "Création de plateformes web modernes et performantes avec Nuxt (Vue.js), FastAPI, Laravel et autres technologies."
     },
     "mobileDev": {
       "title": "Développement Mobile",
