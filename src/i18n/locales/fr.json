@@ -39,7 +39,58 @@
     "readMore": "En savoir plus",
     "experience": "Expérience",
     "education": "Formation",
-    "skills": "Compétences"
+    "skills": "Compétences",
+    "skillGroups": {
+      "development": "Développement",
+      "api": "API & intégration",
+      "databases": "Bases de données",
+      "quality": "Qualité, tests & sécurité",
+      "tools": "Outils / Infra"
+    },
+    "skillItems": {
+      "webServices": "Services web",
+      "thirdPartyApis": "Intégration d'API tierces",
+      "isArchitecture": "Architecture SI",
+      "continuousIntegration": "Intégration continue",
+      "codeAudit": "Audit de code"
+    },
+    "experiences": {
+      "oif": {
+        "title": "Expert Informatique",
+        "company": "Organisation Internationale de la Francophonie — IFDD",
+        "period": "Mai 2021 – En cours"
+      },
+      "senghor": {
+        "title": "Architecte Technique & Développeur Full Stack",
+        "company": "Université Senghor",
+        "period": "Décembre 2025 – Décembre 2026"
+      },
+      "esatic": {
+        "title": "Enseignant vacataire en informatique",
+        "company": "ESATIC",
+        "period": "Octobre 2023 – Aujourd'hui"
+      },
+      "bingerville": {
+        "title": "Enseignant vacataire en sécurité informatique",
+        "company": "Université Polytechnique de Bingerville",
+        "period": "Mai 2026 – Aujourd'hui"
+      },
+      "rmo": {
+        "title": "Formateur Python",
+        "company": "RMO Capital Humain",
+        "period": "Août 2025"
+      },
+      "orange": {
+        "title": "Formateur Flutter",
+        "company": "Orange Côte d'Ivoire",
+        "period": "Avril 2023"
+      },
+      "ansut": {
+        "title": "Développeur / Assurance Qualité",
+        "company": "ANSUT",
+        "period": "Avril – Août 2019"
+      }
+    }
   },
   "services": {
     "title": "Mes Services",

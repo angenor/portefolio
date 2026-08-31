@@ -1,42 +1,41 @@
 <script setup>
+import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import AppButton from '@/components/AppButton.vue'
 
 const { t } = useI18n()
 
-const skills = {
-  mobile: ['Flutter', 'Firebase', 'Supabase'],
-  backend: ['Laravel', 'FastAPI', 'Python'],
-  frontend: ['VueJs', 'Nuxtjs', 'Tailwind CSS'],
-  other: ['Qt/C++', 'Machine Learning', 'Claude Code']
-}
-
-const experience = [
+const skillGroups = computed(() => [
   {
-    title: 'Consultant Informatique',
-    company: 'Organisation Internationale de la Francophonie',
-    period: 'Mai 2021 - Aujourd\'hui',
-    location: 'Québec, Canada (Télétravail)'
+    key: 'development',
+    items: ['Python / FastAPI', 'PHP / Laravel', 'Vue.js / Nuxt', 'Flutter']
   },
   {
-    title: 'Formateur Python',
-    company: 'RMO Capital Humain',
-    period: 'Août 2025',
-    location: 'Abidjan, Côte d\'Ivoire'
+    key: 'api',
+    items: ['API REST', t('about.skillItems.webServices'), t('about.skillItems.thirdPartyApis'), t('about.skillItems.isArchitecture')]
   },
   {
-    title: 'Enseignant Vacataire en Informatique',
-    company: 'ESATIC',
-    period: 'Oct 2023 - Aujourd\'hui',
-    location: 'Abidjan, Côte d\'Ivoire'
+    key: 'databases',
+    items: ['PostgreSQL', 'Supabase']
   },
   {
-    title: 'Formateur Flutter',
-    company: 'Orange Côte d\'Ivoire',
-    period: 'Avril 2023',
-    location: 'Abidjan, Côte d\'Ivoire'
+    key: 'quality',
+    items: [t('about.skillItems.continuousIntegration'), 'Squash-TM', 'Mantis', 'Selenium', t('about.skillItems.codeAudit'), 'JWT / RBAC']
+  },
+  {
+    key: 'tools',
+    items: ['Git', 'Docker', 'Nginx', 'Linux', 'Microsoft Azure']
   }
-]
+])
+
+const experienceKeys = ['oif', 'senghor', 'esatic', 'bingerville', 'rmo', 'orange', 'ansut']
+
+const experience = computed(() => experienceKeys.map((key) => ({
+  key,
+  title: t(`about.experiences.${key}.title`),
+  company: t(`about.experiences.${key}.company`),
+  period: t(`about.experiences.${key}.period`)
+})))
 </script>
 
 <template>
@@ -77,7 +76,7 @@ const experience = [
               {{ $t('about.experience') }}
             </h4>
             <div class="space-y-3">
-              <div v-for="(exp, index) in experience" :key="exp.title" class="flex items-start space-x-3 animate-slide-in-right hover:translate-x-2 transition-all duration-300" :class="`animation-delay-${800 + index * 100}`">
+              <div v-for="(exp, index) in experience" :key="exp.key" class="flex items-start space-x-3 animate-slide-in-right hover:translate-x-2 transition-all duration-300" :class="`animation-delay-${800 + index * 100}`">
                 <FontAwesomeIcon 
                   icon="fa-solid fa-check-circle" 
                   class="text-green-500 mt-1 hover:scale-125 transition-all duration-300"
@@ -91,19 +90,30 @@ const experience = [
           </div>
 
           <!-- Skills -->
-          <div class="space-y-4 animate-slide-in-right animation-delay-1000">
+          <div class="space-y-4 animate-slide-in-right animation-delay-1500">
             <h4 class="text-xl font-semibold text-gray-900 dark:text-white">
               {{ $t('about.skills') }}
             </h4>
-            <div class="flex flex-wrap gap-2">
-              <span 
-                v-for="(skill, index) in [...skills.mobile, ...skills.backend, ...skills.frontend, ...skills.other]" 
-                :key="skill"
-                :class="`animate-scale-in animation-delay-${1100 + index * 50}`"
-                class="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full text-sm hover:bg-blue-100 dark:hover:bg-blue-900 hover:text-blue-600 dark:hover:text-blue-400 hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-default"
+            <div class="space-y-3">
+              <div
+                v-for="(group, index) in skillGroups"
+                :key="group.key"
+                :class="`animate-slide-in-right animation-delay-${1550 + index * 50}`"
+                class="space-y-2"
               >
-                {{ skill }}
-              </span>
+                <p class="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide">
+                  {{ $t(`about.skillGroups.${group.key}`) }}
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    v-for="skill in group.items"
+                    :key="skill"
+                    class="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full text-sm hover:bg-blue-100 dark:hover:bg-blue-900 hover:text-blue-600 dark:hover:text-blue-400 hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-default"
+                  >
+                    {{ skill }}
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>

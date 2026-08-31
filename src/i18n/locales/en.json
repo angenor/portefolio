@@ -39,7 +39,58 @@
     "readMore": "Read More",
     "experience": "Experience",
     "education": "Education",
-    "skills": "Skills"
+    "skills": "Skills",
+    "skillGroups": {
+      "development": "Development",
+      "api": "API & integration",
+      "databases": "Databases",
+      "quality": "Quality, testing & security",
+      "tools": "Tools / Infra"
+    },
+    "skillItems": {
+      "webServices": "Web services",
+      "thirdPartyApis": "Third-party API integration",
+      "isArchitecture": "IS architecture",
+      "continuousIntegration": "Continuous integration",
+      "codeAudit": "Code auditing"
+    },
+    "experiences": {
+      "oif": {
+        "title": "IT Expert",
+        "company": "Organisation Internationale de la Francophonie — IFDD",
+        "period": "May 2021 – Present"
+      },
+      "senghor": {
+        "title": "Technical Architect & Full Stack Developer",
+        "company": "Université Senghor",
+        "period": "December 2025 – December 2026"
+      },
+      "esatic": {
+        "title": "IT Lecturer",
+        "company": "ESATIC",
+        "period": "October 2023 – Present"
+      },
+      "bingerville": {
+        "title": "Cybersecurity Lecturer",
+        "company": "Université Polytechnique de Bingerville",
+        "period": "May 2026 – Present"
+      },
+      "rmo": {
+        "title": "Python Trainer",
+        "company": "RMO Capital Humain",
+        "period": "August 2025"
+      },
+      "orange": {
+        "title": "Flutter Trainer",
+        "company": "Orange Côte d'Ivoire",
+        "period": "April 2023"
+      },
+      "ansut": {
+        "title": "Developer / Quality Assurance",
+        "company": "ANSUT",
+        "period": "April – August 2019"
+      }
+    }
   },
   "services": {
     "title": "My Services",
