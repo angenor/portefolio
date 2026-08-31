@@ -22,6 +22,39 @@ const closeModal = () => {
 const projects = [
   {
     id: 1,
+    title: 'portfolio.uafricas.title',
+    description: 'portfolio.uafricas.description',
+    image: '/images/projets/uafricas/capture1.png',
+    link: 'https://africans-world.org/',
+    tags: ['Laravel', 'Vue.js', 'API', 'Université'],
+    gallery: [
+      '/images/projets/uafricas/capture1.png',
+      '/images/projets/uafricas/capture2.png',
+      '/images/projets/uafricas/capture3.png',
+      '/images/projets/uafricas/capture4.png',
+      '/images/projets/uafricas/capture5.png',
+      '/images/projets/uafricas/capture6.png',
+      '/images/projets/uafricas/capture7.png'
+    ]
+  },
+  {
+    id: 2,
+    title: 'portfolio.miningObsMadagascar.title',
+    description: 'portfolio.miningObsMadagascar.description',
+    image: '/images/projets/observatoire_mines/capture1.png',
+    link: 'https://miningobs.mg/',
+    tags: ['Laravel', 'Freelance', 'Madagascar'],
+    gallery: [
+      '/images/projets/observatoire_mines/capture1.png',
+      '/images/projets/observatoire_mines/capture2.png',
+      '/images/projets/observatoire_mines/capture3.png',
+      '/images/projets/observatoire_mines/capture4.png',
+      '/images/projets/observatoire_mines/capture5.png',
+      '/images/projets/observatoire_mines/capture6.png'
+    ]
+  },
+  {
+    id: 3,
     title: 'portfolio.epavillon.title',
     description: 'portfolio.epavillon.description',
     image: '/images/projets/epavillon/capture1.png',
@@ -44,24 +77,42 @@ const projects = [
     ]
   },
   {
-    id: 2,
-    title: 'portfolio.uafricas.title',
-    description: 'portfolio.uafricas.description',
-    image: '/images/projets/uafricas/capture1.png',
-    link: 'https://africans-world.org/',
-    tags: ['Laravel', 'Vue.js', 'API', 'Université'],
+    id: 4,
+    title: 'portfolio.alumniEsatic.title',
+    description: 'portfolio.alumniEsatic.description',
+    image: '/images/projets/alumni-esatic/capture1.png',
+    link: 'https://alumni-esatic.com/',
+    tags: ['Nuxt', 'NestJS', 'PostgreSQL', 'Microservices'],
     gallery: [
-      '/images/projets/uafricas/capture1.png',
-      '/images/projets/uafricas/capture2.png',
-      '/images/projets/uafricas/capture3.png',
-      '/images/projets/uafricas/capture4.png',
-      '/images/projets/uafricas/capture5.png',
-      '/images/projets/uafricas/capture6.png',
-      '/images/projets/uafricas/capture7.png'
+      '/images/projets/alumni-esatic/capture1.png',
+      '/images/projets/alumni-esatic/capture2.png',
+      '/images/projets/alumni-esatic/capture3.png',
+      '/images/projets/alumni-esatic/capture4.png',
+      '/images/projets/alumni-esatic/capture5.png',
+      '/images/projets/alumni-esatic/capture6.png',
+      '/images/projets/alumni-esatic/capture7.png',
+      '/images/projets/alumni-esatic/capture8.png',
+      '/images/projets/alumni-esatic/capture9.png',
+      '/images/projets/alumni-esatic/capture10.png'
     ]
   },
   {
-    id: 3,
+    id: 5,
+    title: 'portfolio.lecarreDesEtudes.title',
+    description: 'portfolio.lecarreDesEtudes.description',
+    image: '/images/projets/lecarredesetudes/capture1.png',
+    link: 'https://lecarredesetudes.com',
+    tags: ['Nuxt', 'SQLite', 'Nitro'],
+    gallery: [
+      '/images/projets/lecarredesetudes/capture1.png',
+      '/images/projets/lecarredesetudes/capture2.png',
+      '/images/projets/lecarredesetudes/capture3.png',
+      '/images/projets/lecarredesetudes/capture4.png',
+      '/images/projets/lecarredesetudes/capture5.png'
+    ]
+  },
+  {
+    id: 6,
     title: 'portfolio.negotiator.title',
     description: 'portfolio.negotiator.description',
     image: '/images/projets/appMobileNego/capture1.jpeg',
@@ -77,44 +128,6 @@ const projects = [
       '/images/projets/appMobileNego/capture7.jpeg',
       '/images/projets/appMobileNego/capture8.jpeg',
       '/images/projets/appMobileNego/capture9.jpeg'
-    ]
-  },
-  {
-    id: 4,
-    title: 'portfolio.formationOrange.title',
-    description: 'portfolio.formationOrange.description',
-    image: '/images/projets/formationOrange/capture1.jpeg',
-    link: '#',
-    tags: ['Formation', 'Groupe Orange', 'Digital Orange'],
-    gallery: [
-      '/images/projets/formationOrange/capture1.jpeg',
-      '/images/projets/formationOrange/capture2.jpeg',
-      '/images/projets/formationOrange/capture3.jpeg'
-    ]
-  },
-  {
-    id: 5,
-    title: 'portfolio.formationRMO.title',
-    description: 'portfolio.formationRMO.description',
-    image: '/images/projets/formationRMO/photo1.jpeg',
-    link: '#',
-    tags: ['Formation', 'RMO', 'Coaching'],
-    gallery: [
-      '/images/projets/formationRMO/photo1.jpeg',
-      '/images/projets/formationRMO/photo2.jpeg',
-      '/images/projets/formationRMO/photo3.jpeg'
-    ]
-  },
-  {
-    id: 6,
-    title: 'portfolio.esatic.title',
-    description: 'portfolio.esatic.description',
-    image: '/images/projets/esatic/capture1.jpeg',
-    link: '#',
-    tags: ['Enseignement', 'ESATIC', 'HTML', 'CSS', 'PHP', 'JavaScript'],
-    gallery: [
-      '/images/projets/esatic/capture1.jpeg',
-      '/images/projets/esatic/capture2.jpeg'
     ]
   },
   {
@@ -141,22 +154,6 @@ const projects = [
   },
   {
     id: 8,
-    title: 'portfolio.miningObsMadagascar.title',
-    description: 'portfolio.miningObsMadagascar.description',
-    image: '/images/projets/observatoire_mines/capture1.png',
-    link: 'https://miningobs.mg/',
-    tags: ['Laravel', 'Freelance', 'Madagascar'],
-    gallery: [
-      '/images/projets/observatoire_mines/capture1.png',
-      '/images/projets/observatoire_mines/capture2.png',
-      '/images/projets/observatoire_mines/capture3.png',
-      '/images/projets/observatoire_mines/capture4.png',
-      '/images/projets/observatoire_mines/capture5.png',
-      '/images/projets/observatoire_mines/capture6.png'
-    ]
-  },
-  {
-    id: 9,
     title: 'portfolio.suiviRevenusMiniers.title',
     description: 'portfolio.suiviRevenusMiniers.description',
     image: '/images/projets/revenus_miniers/capture1.png',
@@ -167,38 +164,41 @@ const projects = [
     ]
   },
   {
-    id: 10,
-    title: 'portfolio.lecarreDesEtudes.title',
-    description: 'portfolio.lecarreDesEtudes.description',
-    image: '/images/projets/lecarredesetudes/capture1.png',
-    link: 'https://lecarredesetudes.com',
-    tags: ['Nuxt', 'SQLite', 'Nitro'],
+    id: 9,
+    title: 'portfolio.esatic.title',
+    description: 'portfolio.esatic.description',
+    image: '/images/projets/esatic/capture1.jpeg',
+    link: '#',
+    tags: ['Enseignement', 'ESATIC', 'HTML', 'CSS', 'PHP', 'JavaScript'],
     gallery: [
-      '/images/projets/lecarredesetudes/capture1.png',
-      '/images/projets/lecarredesetudes/capture2.png',
-      '/images/projets/lecarredesetudes/capture3.png',
-      '/images/projets/lecarredesetudes/capture4.png',
-      '/images/projets/lecarredesetudes/capture5.png'
+      '/images/projets/esatic/capture1.jpeg',
+      '/images/projets/esatic/capture2.jpeg'
+    ]
+  },
+  {
+    id: 10,
+    title: 'portfolio.formationOrange.title',
+    description: 'portfolio.formationOrange.description',
+    image: '/images/projets/formationOrange/capture1.jpeg',
+    link: '#',
+    tags: ['Formation', 'Groupe Orange', 'Digital Orange'],
+    gallery: [
+      '/images/projets/formationOrange/capture1.jpeg',
+      '/images/projets/formationOrange/capture2.jpeg',
+      '/images/projets/formationOrange/capture3.jpeg'
     ]
   },
   {
     id: 11,
-    title: 'portfolio.alumniEsatic.title',
-    description: 'portfolio.alumniEsatic.description',
-    image: '/images/projets/alumni-esatic/capture1.png',
-    link: 'https://alumni-esatic.com/',
-    tags: ['Nuxt', 'NestJS', 'PostgreSQL', 'Microservices'],
+    title: 'portfolio.formationRMO.title',
+    description: 'portfolio.formationRMO.description',
+    image: '/images/projets/formationRMO/photo1.jpeg',
+    link: '#',
+    tags: ['Formation', 'RMO', 'Coaching'],
     gallery: [
-      '/images/projets/alumni-esatic/capture1.png',
-      '/images/projets/alumni-esatic/capture2.png',
-      '/images/projets/alumni-esatic/capture3.png',
-      '/images/projets/alumni-esatic/capture4.png',
-      '/images/projets/alumni-esatic/capture5.png',
-      '/images/projets/alumni-esatic/capture6.png',
-      '/images/projets/alumni-esatic/capture7.png',
-      '/images/projets/alumni-esatic/capture8.png',
-      '/images/projets/alumni-esatic/capture9.png',
-      '/images/projets/alumni-esatic/capture10.png'
+      '/images/projets/formationRMO/photo1.jpeg',
+      '/images/projets/formationRMO/photo2.jpeg',
+      '/images/projets/formationRMO/photo3.jpeg'
     ]
   }
 ]
