@@ -159,10 +159,12 @@ const projects = [
     id: 9,
     title: 'portfolio.suiviRevenusMiniers.title',
     description: 'portfolio.suiviRevenusMiniers.description',
-    image: '/images/projets/placeholder.svg',
+    image: '/images/projets/revenus_miniers/capture1.png',
     link: 'https://kaominina-mangarahara.mg/',
     tags: ['Laravel', 'Freelance', 'Madagascar'],
-    gallery: []
+    gallery: [
+      '/images/projets/revenus_miniers/capture1.png'
+    ]
   }
 ]
 </script>
