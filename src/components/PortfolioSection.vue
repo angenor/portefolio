@@ -26,7 +26,7 @@ const projects = [
     description: 'portfolio.universiteSenghor.description',
     image: '/images/projets/usenghor/capture1.png',
     link: 'https://usenghor-francophonie.org/',
-    tags: ['Laravel', 'Vue.js', 'Freelance'],
+    tags: ['Nuxt 4', 'Vue 3', 'FastAPI', 'PostgreSQL', 'Docker', 'Nginx'],
     gallery: [
       '/images/projets/usenghor/capture1.png',
       '/images/projets/usenghor/capture2.png',
@@ -64,7 +64,7 @@ const projects = [
     description: 'portfolio.epavillon.description',
     image: '/images/projets/epavillon/capture1.png',
     link: 'https://epavillon.francophonie.org',
-    tags: ['Laravel', 'Vue.js', 'Zoom API'],
+    tags: ['Laravel', 'Vue.js', 'Supabase', 'API REST', 'Zoom API', 'YouTube API'],
     gallery: [
       '/images/projets/epavillon/capture1.png',
       '/images/projets/epavillon/capture2.png',
@@ -122,7 +122,7 @@ const projects = [
     description: 'portfolio.negotiator.description',
     image: '/images/projets/appMobileNego/capture1.jpeg',
     link: '#',
-    tags: ['Flutter', 'Firebase', 'Mobile'],
+    tags: ['Flutter', 'Supabase', 'API REST', 'Mobile'],
     gallery: [
       '/images/projets/appMobileNego/capture1.jpeg',
       '/images/projets/appMobileNego/capture2.jpeg',
@@ -152,7 +152,7 @@ const projects = [
     description: 'portfolio.esatic.description',
     image: '/images/projets/esatic/capture1.jpeg',
     link: '#',
-    tags: ['Enseignement', 'ESATIC', 'HTML', 'CSS', 'PHP', 'JavaScript'],
+    tags: ['Enseignement', 'ESATIC', 'HTML', 'CSS', 'PHP', 'JavaScript', 'UML'],
     gallery: [
       '/images/projets/esatic/capture1.jpeg',
       '/images/projets/esatic/capture2.jpeg'
@@ -164,7 +164,7 @@ const projects = [
     description: 'portfolio.formationOrange.description',
     image: '/images/projets/formationOrange/capture1.jpeg',
     link: '#',
-    tags: ['Formation', 'Groupe Orange', 'Digital Orange'],
+    tags: ['Formation', 'Dart', 'Flutter', 'Firebase'],
     gallery: [
       '/images/projets/formationOrange/capture1.jpeg',
       '/images/projets/formationOrange/capture2.jpeg',
@@ -177,7 +177,7 @@ const projects = [
     description: 'portfolio.formationRMO.description',
     image: '/images/projets/formationRMO/photo1.jpeg',
     link: '#',
-    tags: ['Formation', 'RMO', 'Coaching'],
+    tags: ['Formation', 'Python'],
     gallery: [
       '/images/projets/formationRMO/photo1.jpeg',
       '/images/projets/formationRMO/photo2.jpeg',
