@@ -23,7 +23,7 @@
       "instructor": "Formateur",
       "ai": "Passionné d'IA"
     },
-    "description": "Consultant Informatique à l'Organisation Internationale de la Francophonie. Développeur Full Stack avec plus de 5 ans d'expérience, spécialisé en développement mobile (Flutter) et web (Laravel, FastAPI, Nuxt/VueJs). Formateur technique (Orange CI, RMO, ESATIC) et passionné par l'IA appliquée.",
+    "description": "Consultant Informatique à l'Organisation Internationale de la Francophonie. Développeur Full Stack avec plus de 5 ans d'expérience, spécialisé en développement mobile (Flutter) et web (Laravel, FastAPI, Nuxt/VueJs). Formateur technique (Orange CI, RMO, ESATIC, UPB) et passionné par l'IA appliquée.",
     "downloadCV": "Télécharger mon CV"
   },
   "home": {
@@ -35,7 +35,7 @@
   "about": {
     "title": "À propos de moi",
     "subtitle": "Développeur Full Stack & Consultant OIF",
-    "description": "Consultant Informatique à l'Organisation Internationale de la Francophonie avec plus de 5 ans d'expérience. Spécialisé en développement mobile (Flutter) et web (Laravel, FastAPI, Nuxt/VueJs). Formateur technique (Orange CI, RMO, ESATIC) et passionné par l'IA appliquée, notamment le développement de chatbots intelligents.",
+    "description": "Consultant Informatique à l'Organisation Internationale de la Francophonie avec plus de 5 ans d'expérience. Spécialisé en développement mobile (Flutter) et web (Laravel, FastAPI, Nuxt/VueJs). Formateur technique (Orange CI, RMO, ESATIC, UPB) et passionné par l'IA appliquée, notamment le développement de chatbots intelligents.",
     "readMore": "En savoir plus",
     "experience": "Expérience",
     "education": "Formation",
