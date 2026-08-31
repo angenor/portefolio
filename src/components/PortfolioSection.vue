@@ -48,7 +48,7 @@ const projects = [
     description: 'portfolio.miningObsMadagascar.description',
     image: '/images/projets/observatoire_mines/capture1.png',
     link: 'https://miningobs.mg/',
-    tags: ['Laravel', 'Freelance', 'Madagascar'],
+    tags: ['Nuxt', 'Nitro', 'PostgreSQL'],
     gallery: [
       '/images/projets/observatoire_mines/capture1.png',
       '/images/projets/observatoire_mines/capture2.png',
@@ -64,7 +64,7 @@ const projects = [
     description: 'portfolio.epavillon.description',
     image: '/images/projets/epavillon/capture1.png',
     link: 'https://epavillon.francophonie.org',
-    tags: ['Laravel', 'Vue.js', 'Supabase', 'API REST', 'Zoom API', 'YouTube API'],
+    tags: ['Laravel', 'Vue.js', 'MySQL', 'Supabase', 'API REST', 'Zoom API', 'YouTube API', 'OpenRouter'],
     gallery: [
       '/images/projets/epavillon/capture1.png',
       '/images/projets/epavillon/capture2.png',
@@ -122,7 +122,7 @@ const projects = [
     description: 'portfolio.negotiator.description',
     image: '/images/projets/appMobileNego/capture1.jpeg',
     link: '#',
-    tags: ['Flutter', 'Supabase', 'API REST', 'Mobile'],
+    tags: ['Flutter', 'API REST'],
     gallery: [
       '/images/projets/appMobileNego/capture1.jpeg',
       '/images/projets/appMobileNego/capture2.jpeg',
@@ -141,7 +141,7 @@ const projects = [
     description: 'portfolio.suiviRevenusMiniers.description',
     image: '/images/projets/revenus_miniers/capture1.png',
     link: 'https://kaominina-mangarahara.mg/',
-    tags: ['Laravel', 'Freelance', 'Madagascar'],
+    tags: ['Nuxt', 'Nitro', 'PostgreSQL', 'FastAPI'],
     gallery: [
       '/images/projets/revenus_miniers/capture1.png'
     ]
