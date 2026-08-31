@@ -121,19 +121,39 @@ const projects = [
     id: 7,
     title: 'portfolio.universiteSenghor.title',
     description: 'portfolio.universiteSenghor.description',
-    image: '/images/projets/placeholder.svg',
-    link: 'http://137.74.117.231/',
+    image: '/images/projets/usenghor/capture1.png',
+    link: 'https://usenghor-francophonie.org/',
     tags: ['Laravel', 'Vue.js', 'Freelance'],
-    gallery: []
+    gallery: [
+      '/images/projets/usenghor/capture1.png',
+      '/images/projets/usenghor/capture2.png',
+      '/images/projets/usenghor/capture3.png',
+      '/images/projets/usenghor/capture4.png',
+      '/images/projets/usenghor/capture5.png',
+      '/images/projets/usenghor/capture6.png',
+      '/images/projets/usenghor/capture7.png',
+      '/images/projets/usenghor/capture8.png',
+      '/images/projets/usenghor/capture9.png',
+      '/images/projets/usenghor/capture10.png',
+      '/images/projets/usenghor/capture11.png',
+      '/images/projets/usenghor/capture12.png'
+    ]
   },
   {
     id: 8,
     title: 'portfolio.miningObsMadagascar.title',
     description: 'portfolio.miningObsMadagascar.description',
-    image: '/images/projets/placeholder.svg',
+    image: '/images/projets/observatoire_mines/capture1.png',
     link: 'https://miningobs.mg/',
     tags: ['Laravel', 'Freelance', 'Madagascar'],
-    gallery: []
+    gallery: [
+      '/images/projets/observatoire_mines/capture1.png',
+      '/images/projets/observatoire_mines/capture2.png',
+      '/images/projets/observatoire_mines/capture3.png',
+      '/images/projets/observatoire_mines/capture4.png',
+      '/images/projets/observatoire_mines/capture5.png',
+      '/images/projets/observatoire_mines/capture6.png'
+    ]
   },
   {
     id: 9,
